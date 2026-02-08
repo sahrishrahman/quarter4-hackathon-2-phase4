@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 \"Frontend for The Evolution of Todo - Phase II: Full-Stack Web Application\nTarget audience: Hackathon judges seeking breathtaking, professional-grade demos; developers building premium productivity apps; and the Frontend Engineer agent delivering flawless execution via Claude Code.\nFocus: Define exhaustive, zero-ambiguity, visually masterful specifications for the Next.js frontend ONLY. The resulting UI must be exceptionally beautiful, modern, and professional — evoking the polish of top-tier commercial apps \\(like Todoist, Notion, or Linear\\). Every pixel, interaction, and flow must feel intentional, elegant, and delightful, while fully implementing the 5 core todo features \\(Add, Delete, Update, View, Mark Complete\\), Better Auth \\(signup/signin\\), protected routes, and seamless JWT-secured API integration.\nSuccess criteria:\n\nDelivers a stunning, jaw-dropping UI that instantly stands out in hackathon judging — clean, sophisticated, and emotionally engaging.\nAchieves true professional excellence: flawless typography, perfect spacing rhythm, subtle depth \\(soft shadows, glassmorphism\\), premium color harmony, and joyful micro-interactions.\nCovers every screen/state: Auth \\(Sign Up/Sign In\\), Protected Dashboard \\(task list, empty state, loading\\), Add Task modal, Edit Task modal, instant visual feedback on all actions.\nProvides crystal-clear textual wireframes, precise layout grids, exact Tailwind class recommendations, component hierarchy, and behavior descriptions — leaving zero room for interpretation error.\nDefines a bulletproof, typed API client with automatic JWT handling and graceful auth redirects.\nEnsures pixel-perfect responsiveness across mobile \\(320px+\\), tablet, and desktop with fluid, adaptive layouts.\nGenerates a flawless Markdown file \\(v1_frontend.spec.md\\) in specs/ui/ — so complete that the Frontend Engineer agent can build a world-class, demo-ready frontend\" -Number 1 -ShortName \"frontend-todo-ui\")",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(if [ -d \"C:\\\\Users\\\\dell\\\\Desktop\\\\spec-project\\\\NewFullstack\\\\specs\\\\001-frontend-todo-ui\\\\checklists\" ])",
+      "Bash(then ls \"C:\\\\Users\\\\dell\\\\Desktop\\\\spec-project\\\\NewFullstack\\\\specs\\\\001-frontend-todo-ui\\\\checklists\")",
+      "Bash(else echo \"No checklists directory found\")",
+      "Bash(fi)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(npm init -y)",
+      "Bash(npm install next react react-dom typescript @types/react @types/node @types/react-dom --save)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npx --version)",
+      "Bash(npm install @better-auth/react better-auth react-hook-form zod @hookform/resolvers framer-motion)",
+      "Bash(npm install @better-auth/react @better-auth/client better-auth react-hook-form zod @hookform/resolvers framer-motion swr)",
+      "Bash(npm install better-auth @better-auth/react react-hook-form zod @hookform/resolvers framer-motion swr)",
+      "Bash(npm install react-hook-form zod @hookform/resolvers framer-motion swr)",
+      "Bash(npm install class-variance-authority clsx tailwind-merge)",
+      "Bash(git fetch:*)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"Backend for The Evolution of Todo - Phase II: Full-Stack Web Application\" -Number 2 -ShortName \"backend-todo-api\")",
+      "Bash(.specify/scripts/powershell/update-agent-context.ps1 -AgentType claude)",
+      "Bash(cat:*)",
+      "Bash(dir:*)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json -Number 3 -ShortName \"flagship-ui\")",
+      "Bash(if [ -d \"history/prompts/flagship-ui\" ])",
+      "Bash(then ls history/prompts/flagship-ui)",
+      "Bash(else echo \"No flagship-ui prompts directory found\")",
+      "Bash(if [ -d \"C:\\\\Users\\\\dell\\\\Desktop\\\\spec-project\\\\NewFullstack\\\\specs\\\\003-flagship-ui\\\\checklists\" ])",
+      "Bash(then ls \"C:\\\\Users\\\\dell\\\\Desktop\\\\spec-project\\\\NewFullstack\\\\specs\\\\003-flagship-ui\\\\checklists\")",
+      "Bash(ls:*)",
+      "Bash(npm run build:*)",
+      "Skill(sp.phr)"
+    ]
+  }
+}
